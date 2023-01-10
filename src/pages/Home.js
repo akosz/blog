@@ -3,7 +3,7 @@ import React from 'react'
 import { Clock } from '../components/Clock'
 import { MainSection } from '../components/MainSection'
 
-export const Home = () => {
+export const Home = (news) => {
     return (
         <Grid container spacing={2}>
             <Grid item xs={9}>
