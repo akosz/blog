@@ -1,8 +1,9 @@
 import { AppBar, Avatar, Box, Button, Container, IconButton, Menu, MenuItem, Toolbar, Tooltip, Typography } from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu'
 import AdbIcon from '@mui/icons-material/Adb'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+
 
 export const Layout = ({ children }) => {
     const navigate = useNavigate();
@@ -16,9 +17,13 @@ export const Layout = ({ children }) => {
         { name: 'Kilépés' }
     ];
 
-
     const [anchorElNav, setAnchorElNav] = useState(null);
     const [anchorElUser, setAnchorElUser] = useState(null);
+
+
+    
+
+
 
     const handleOpenNavMenu = (event) => {
         setAnchorElNav(event.currentTarget);
